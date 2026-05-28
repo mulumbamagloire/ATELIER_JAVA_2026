@@ -59,11 +59,11 @@
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
 <% for (int i = 1; i <= cpt; i++) { %>
   <p style="margin:0; font-family:monospace">
-  <%-- espaces de remplissage -->
+  <%-- espaces de remplissage --%>
   <% for (int s = 1; s <= (cpt - i); s++) { %>
     &nbsp;&nbsp;
   <% } %>
-  <%-- étoiles -->
+  <%-- étoiles --%>
   <% for (int j = 1; j <= i; j++) { %>
     <%= "*" %>
   <% } %>
@@ -85,7 +85,7 @@
 
 <h2>Exercice 6 : Le demi losange</h2>
 <p>Ecrire le code afin de produire un losange</p>
-<%-- Partie montante (triangle droit) -->
+<%-- Partie montante (triangle droit) --%>
 <% for (int i = 1; i <= cpt; i++) { %>
   <p style="margin:0; font-family:monospace">
   <% for (int s = 1; s <= (cpt - i); s++) { %>&nbsp;&nbsp;<% } %>
@@ -93,7 +93,7 @@
   </p>
 <% } %>
 
-<%-- Partie descendante (triangle inversé, sans répéter la ligne max) -->
+<%-- Partie descendante (triangle inversé, sans répéter la ligne max) --%>
 <% for (int i = cpt - 1; i >= 1; i--) { %>
   <p style="margin:0; font-family:monospace">
   <% for (int s = 1; s <= (cpt - i); s++) { %>&nbsp;&nbsp;<% } %>
